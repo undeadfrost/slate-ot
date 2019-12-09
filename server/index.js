@@ -3,13 +3,16 @@ const ShareDB = require('sharedb');
 const WebSocket = require('ws');
 const express = require('express');
 const WebSocketJSONStream = require('@teamwork/websocket-json-stream');
+const slateType = require('../lib/type');
+
+ShareDB.types.register(slateType.type);
 
 const backend = new ShareDB();
 createDoc(startServer);
 
 function createDoc(callback) {
   const connection = backend.connect();
-  const doc = connection.get('examples', 'counter');
+  const doc = connection.get('examples', 'richText');
   doc.fetch((err) => {
     if (err) throw err;
     if (doc.type === null) {
@@ -30,10 +33,10 @@ function createDoc(callback) {
             ],
           }
         ],
+        'slate-ot-type',
         callback
       );
       console.log('Doc.data in server');
-      console.log(doc.data);
       return;
     }
     callback();
