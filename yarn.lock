@@ -9293,10 +9293,10 @@ shallow-clone@^3.0.0:
   dependencies:
     kind-of "^6.0.2"
 
-sharedb@^1.0.0:
-  version "1.0.0"
-  resolved "http://bohr.cheftin.com:4873/sharedb/-/sharedb-1.0.0.tgz#004a906548501b0b6070e8a49d2b63d2e19a8ef4"
-  integrity sha1-AEqQZUhQGwtgcOiknStj0uGajvQ=
+sharedb@^1.1.0:
+  version "1.1.0"
+  resolved "http://bohr.cheftin.com:4873/sharedb/-/sharedb-1.1.0.tgz#89c1a23823c8ac36f1a3a3359fcf46efc4411ff1"
+  integrity sha1-icGiOCPIrDbxo6M1n89G78RBH/E=
   dependencies:
     arraydiff "^0.1.1"
     async "^1.4.2"
@@ -10319,15 +10319,10 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.0.1, uuid@^3.3.2:
+uuid@^3.0.1, uuid@^3.3.2, uuid@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
-
-uuid@^3.3.3:
-  version "3.3.3"
-  resolved "http://bohr.cheftin.com:4873/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
-  integrity sha1-RWjwIW54dg7h2/Ok0s9T4iQRKGY=
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
